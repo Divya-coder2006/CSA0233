@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+   
+    printf("Divya Kala \n192413009 \n");
+
+    return 0;
+}
