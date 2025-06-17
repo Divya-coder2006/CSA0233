@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+  int apple = 30 , grapes = 20 ,  watermelon = 50;
+   
+    printf("Apple = %d  \nGrapes = %d \nWatermelon= %d \n",apple , grapes, watermelon);
+
+    return 0;
+}
