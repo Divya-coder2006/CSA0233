@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float side1, side2, side3, perimeter;
+
+    // Input the three sides of the triangle
+    printf("Enter the first side of the triangle: ");
+    scanf("%f", &side1);
+
+    printf("Enter the second side of the triangle: ");
+    scanf("%f", &side2);
+
+    printf("Enter the third side of the triangle: ");
+    scanf("%f", &side3);
+
+    // Calculate perimeter
+    perimeter = side1 + side2 + side3;
+
+    // Output result
+    printf("Perimeter of the triangle = %.2f\n", perimeter);
+
+    return 0;
+}

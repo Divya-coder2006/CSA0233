@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int A = 20;
+    int B = 30;
+
+    // Arithmetic operations
+    int sum = A + B;
+    int difference = A - B;
+    int product = A * B;
+    int quotient = B / A;     // Integer division
+    int remainder = B % A;    // Modulo operation
+
+    // Display results
+    printf("Addition (A + B) = %d\n", sum);
+    printf("Subtraction (A - B) = %d\n", difference);
+    printf("Multiplication (A * B) = %d\n", product);
+    printf("Division (B / A) = %f\n", quotient);
+    printf("Modulo (B %% A) = %d\n", remainder);
+
+    return 0;
+}

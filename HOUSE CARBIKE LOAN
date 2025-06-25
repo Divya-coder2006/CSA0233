@@ -1,0 +1,61 @@
+#include <stdio.h>
+
+int main() {
+    // Loan amounts in rupees
+    float houseLoan = 24200000;   // 2.42 Crores
+    float carLoan = 2000000;      // Hyundai Creta
+    float bikeLoan = 190000;      // Bajaj Dominar 400
+    float scootyLoan = 70000;     // Honda Activa 6G
+
+    // Tenures in years
+    int houseTenure = 20;
+    int carTenure = 5;
+    int bikeTenure = 3;
+    int scootyTenure = 3;
+
+    // Calculate total loan
+    float totalLoan = houseLoan + carLoan + bikeLoan + scootyLoan;
+
+    // Calculate total interest-free EMIs per year (assuming simple division)
+    float monthlyHouseEMI = houseLoan / (houseTenure * 12);
+    float monthlyCarEMI = carLoan / (carTenure * 12);
+    float monthlyBikeEMI = bikeLoan / (bikeTenure * 12);
+    float monthlyScootyEMI = scootyLoan / (scootyTenure * 12);
+
+    // Calculate average tenure
+    float averageTenure = (houseTenure + carTenure + bikeTenure + scootyTenure) / 4.0;
+
+    // Display results
+    printf("Loan Summary:\n");
+    printf("House Loan: ₹%.2f\n", houseLoan);
+    printf("Car Loan (Hyundai Creta): ₹%.2f\n", carLoan);
+    printf("Bike Loan (Bajaj Dominar): ₹%.2f\n", bikeLoan);
+    printf("Scooty Loan (Honda Activa): ₹%.2f\n", scootyLoan);
+    printf("Total Loan Amount: ₹%.2f\n\n", totalLoan);
+
+    printf("Monthly EMI (estimated, interest not included):\n");
+    printf("House EMI: ₹%.2f\n", monthlyHouseEMI);
+    printf("Car EMI: ₹%.2f\n", monthlyCarEMI);
+    printf("Bike EMI: ₹%.2f\n", monthlyBikeEMI);
+    printf("Scooty EMI: ₹%.2f\n\n", monthlyScootyEMI);
+
+    printf("Average Loan Tenure: %.2f years\n", averageTenure);
+
+    return 0;
+}
+
+
+Loan Summary:
+House Loan: ₹24200000.00
+Car Loan (Hyundai Creta): ₹2000000.00
+Bike Loan (Bajaj Dominar): ₹190000.00
+Scooty Loan (Honda Activa): ₹70000.00
+Total Loan Amount: ₹26390000.00
+
+Monthly EMI (estimated, interest not included):
+House EMI: ₹100833.33
+Car EMI: ₹33333.33
+Bike EMI: ₹5277.78
+Scooty EMI: ₹1944.44
+
+Average Loan Tenure: 7.75 years

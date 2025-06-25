@@ -1,0 +1,18 @@
+INPUT
+#include <stdio.h>
+int main()
+{
+
+    float b = 30,l = 50,area;  
+    
+     area = l*b ;
+     printf ( "area of triangle = %0.2f",area);
+   return 0;
+   
+}
+
+
+OUTPUT 
+area of triangle = 1500.00
+
+=== Code Execution Successful ===

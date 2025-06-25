@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    // Declare variables for different expense categories (in ₹)
+    float groceries, utilities, schoolFees, transportation, healthcare, diningOut, miscellaneous;
+    float totalExpenses;
+
+    // Input expenses from user
+    printf("Enter monthly expenses for the following categories (in ₹):\n");
+
+    printf("Groceries & Household: ");
+    scanf("%f", &groceries);
+
+    printf("Utilities (Electricity, Water, Internet): ");
+    scanf("%f", &utilities);
+
+    printf("School Fees & Transport: ");
+    scanf("%f", &schoolFees);
+
+    printf("Transportation (Fuel, Public Transport): ");
+    scanf("%f", &transportation);
+
+    printf("Healthcare & Medicines: ");
+    scanf("%f", &healthcare);
+
+    printf("Dining Out & Entertainment: ");
+    scanf("%f", &diningOut);
+
+    printf("Miscellaneous (Clothes, Personal Care, etc.): ");
+    scanf("%f", &miscellaneous);
+
+    // Calculate total expenses
+    totalExpenses = groceries + utilities + schoolFees + transportation + healthcare + diningOut + miscellaneous;
+
+    // Display total expenses
+    printf("\nTotal Monthly Day-to-Day Expenses: ₹%.2f\n", totalExpenses);
+
+    return 0;
+}
